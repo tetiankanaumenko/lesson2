@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <!-- favicon.ico  type="image/x-icon" -->
+</head>
+<style>
+    .header,
+    .article {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .contact {
+        margin: 30px;
+    }
+
+    .contact__item {
+        margin-right: 30px;
+    }
+
+    .contact__icon {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <h1>Привет мир!</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="#frontend">Frontend</a></li>
+                <li><a href="#html5">Основы html5</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            <a class="contact__item" href="tel:+380931282717">
+                <img class="contact__icon" src="img/phone.png" width="16" alt="phone" title="мой телефон">
+                <span>+38 (093) 1282717</span>
+            </a>
+            <a class="contact__item" href="skype:voloshka.in.ch?chat">
+                <img class="contact__icon" src="img/skype.png" width="16" alt="phone" title="мой телефон">
+                <span>Напишите мне в скайп</span>
+            </a>
+        </div>
+    </header>
+    <hr>
+    <article class="article">
+        <section class="top">
+            <figure>
+                <img src="img/yeti-html5.png" alt="html это просто" title="yeti">
+                <figcaption>
+                    Это ети, он будет помогать нам учить frontend.
+                </figcaption>
+            </figure>
+
+            <h2 id="frontend">Как стать фронтенд-разработчиком</h2>
+            <p>
+                Прежде чем я расскажу о различных частях предлагаемого здесь <strong>плана действий</strong>, мне
+                хотелось бы сделать оговорку. Цель этого плана заключается в том, чтобы дать вам общее представление о
+                том, что происходит в современном мире фронтенд-разработки, и рассказать о порядке освоения
+                <em>технологий</em> на тот случай, <strong>если вам это нужно</strong>.
+            </p>
+            <br>
+            <blockquote>
+                Первое, что стоит освоить такому программисту — это основы HTML, CSS и JavaScript.
+            </blockquote>
+            <br>
+            <dl>
+                <dt><b>HTML</b></dt>
+                <dd>это то, что позволяет структурировать веб-страницы. Это — что-то вроде человеческого скелета,
+                    который формирует основу нашего тела</dd>
+                <dt><b>CSS</b></dt>
+                <dd>Технология CSS, или каскадные таблицы стилей, используется для придания страницам привлекательного
+                    вида.</dd>
+                <dt><b>JavaScript</b></dt>
+                <dd>JavaScript — это технология, которая позволяет сделать HTML-страницы интерактивными.</dd>
+            </dl>
+        </section>
+
+        <section id="html5">
+
+            <h2>Основы HTML5</h2>
+
+            <h3>HTML-ссылки</h3>
+
+            <p>HTML-ссылки создаются с помощью элементов <code>&lt;a&gt;</code>, <code>&lt;area&gt;</code> и
+                <code>&lt;link&gt;</code>.
+                Ссылки представляют собой связь между двумя ресурсами, одним из которых является текущий документ.</p>
+
+            <p><strong>Вспомогательный маттериал</strong></p>
+            <ol>
+                <li>
+                    <a href="http://gnatkovsky.com.ua/kak-sdelat-ssylki-na-viber-whatsapp-telegram.html"
+                        target="_blank">Как сделать ссылу на чаты в телеграмм, скайп, вайбер.</a>
+                </li>
+                <li>
+                    <a href="https://metanit.com/web/html5/2.9.php" target="_blank">В общем про ссылки</a>
+                </li>
+            </ol>
+
+
+
+            <br>
+            <br>
+            <br>
+
+            <details>
+                <summary>Флагманы 2015</summary>
+                <iframe src="index.html" frameborder="0" name="target" width="560" height="500">Элемент iframe (от англ.
+                    inline frame —
+                    встроенный
+                    фрейм) создаёт встроенный фрейм, который находится внутри обычного документа, он позволяет загружать
+                    в область заданных размеров любые другие независимые документы.</iframe>
+            </details>
+
+
+
+
+
+
+
+            <h3>Вы молодец. Заполните пожалуйста форму:</h3>
+
+
+            <form action="#">
+                <div class="form__row">
+                    <label for="name">Ваше имя</label>
+                    <input id="name" type="text" name="name">
+                </div>
+                <div class="form__row">
+                    <label for="phone">Ваш телефон</label>
+                    <input id="phone" type="tel" name="phone">
+                </div>
+                <div class="form__row">
+                    <label for="date">Дата рождения</label>
+                    <input id="date" type="date" name="date">
+                </div>
+                <p>Отметьте что вы уже освоили </p>
+                <div class="form__row">
+                    <label for="skils1">Html</label>
+                    <input id="skils1" type="checkbox" name="skils">
+                </div>
+                <div class="form__row">
+                    <label for="skils2">Css</label>
+                    <input id="skils2" type="checkbox" name="skils">
+                </div>
+                <div class="form__row">
+                    <label for="skils3">Js</label>
+                    <input id="skils3" type="checkbox" name="skils">
+                </div>
+                <p>Выберите свою оценку</p>
+                <div class="form__row">
+                    <label for="rating1">8</label>
+                    <input id="rating1" type="radio" name="rating">
+                </div>
+                <div class="form__row">
+                    <label for="rating2">9</label>
+                    <input id="rating2" type="radio" name="rating">
+                </div>
+                <div class="form__row">
+                    <label for="rating3">10</label>
+                    <input id="rating3" type="radio" name="rating">
+                </div>
+
+
+            </form>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+
+
+        </section>
+
+    </article>
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>
